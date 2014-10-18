@@ -298,9 +298,10 @@
 	border-bottom: medium double #000;
 }
 #events{
-	margin: 0 auto;
+	margin-left: -20px;
+	margin-top: -20px;
 	height: 400px;
-	width: 80%;
+	width: 100%;
 	list-style: none;
 	overflow: scroll;
 	z-index: -1000;

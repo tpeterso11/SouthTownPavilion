@@ -3,7 +3,7 @@ $(document).ready(function(e) {
 	$(".event-info").hide();
 	
 $(".event").on('click', function(){
-	$(this).css("height", "300");
+	$(this).css("height", "400");
 	$(this).children().fadeIn(1000, 'linear');
 });
 $(".event").on('dblclick', function(){
