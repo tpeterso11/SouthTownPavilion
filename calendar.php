@@ -27,6 +27,7 @@ $background = "Images/test-back.png";
 };
 };
 ?>
+
 </ul>
 <p id="clicker">For more information, click event.
 <br>To close, double click</p>
