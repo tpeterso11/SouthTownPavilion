@@ -368,18 +368,19 @@
 
 /* line 300, ../SASS/index-style.scss */
 #events {
-  margin: 0 auto;
+  margin-left: -20px;
+  margin-top: -20px;
   height: 400px;
-  width: 80%;
+  width: 100%;
   list-style: none;
   overflow: scroll;
   z-index: -1000;
 }
-/* line 307, ../SASS/index-style.scss */
+/* line 308, ../SASS/index-style.scss */
 #events :hover ~ #clicker {
   opacity: 1;
 }
-/* line 310, ../SASS/index-style.scss */
+/* line 311, ../SASS/index-style.scss */
 #events .event {
   border-radius: 5px;
   left: -20px;
@@ -393,18 +394,18 @@
   -ms-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
 }
-/* line 322, ../SASS/index-style.scss */
+/* line 323, ../SASS/index-style.scss */
 #events .event :hover ~ #closer {
   opacity: 1;
 }
-/* line 325, ../SASS/index-style.scss */
+/* line 326, ../SASS/index-style.scss */
 #events .event .date {
   font-size: 16px;
   /*float:right; */
   margin-top: -10px;
   margin-right: 50px;
 }
-/* line 331, ../SASS/index-style.scss */
+/* line 332, ../SASS/index-style.scss */
 #events .event .event-name {
   float: right;
   margin: 0 auto;
@@ -415,7 +416,7 @@
   font-family: second;
   text-align: center;
 }
-/* line 341, ../SASS/index-style.scss */
+/* line 342, ../SASS/index-style.scss */
 #events .event .event-name2 {
   float: right;
   font-size: 36px;
@@ -423,7 +424,7 @@
   margin-right: 115px;
   margin-top: 20px;
 }
-/* line 348, ../SASS/index-style.scss */
+/* line 349, ../SASS/index-style.scss */
 #events .event .more {
   clear: both;
   float: right;
@@ -432,7 +433,7 @@
   font-size: 16px;
   font-family: second;
 }
-/* line 357, ../SASS/index-style.scss */
+/* line 358, ../SASS/index-style.scss */
 #events .event-icon {
   margin-top: 10px;
   height: 80px;
@@ -440,7 +441,7 @@
   z-index: 1000;
 }
 
-/* line 364, ../SASS/index-style.scss */
+/* line 365, ../SASS/index-style.scss */
 #clicker {
   height: 100px;
   width: 200px;
@@ -458,61 +459,61 @@
 /*Animations*/
 /* Buzz Out */
 @-webkit-keyframes buzz-out {
-  /* line 382, ../SASS/index-style.scss */
+  /* line 383, ../SASS/index-style.scss */
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 387, ../SASS/index-style.scss */
+  /* line 388, ../SASS/index-style.scss */
   20% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 392, ../SASS/index-style.scss */
+  /* line 393, ../SASS/index-style.scss */
   30% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 397, ../SASS/index-style.scss */
+  /* line 398, ../SASS/index-style.scss */
   40% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 402, ../SASS/index-style.scss */
+  /* line 403, ../SASS/index-style.scss */
   50% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 407, ../SASS/index-style.scss */
+  /* line 408, ../SASS/index-style.scss */
   60% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 412, ../SASS/index-style.scss */
+  /* line 413, ../SASS/index-style.scss */
   70% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 417, ../SASS/index-style.scss */
+  /* line 418, ../SASS/index-style.scss */
   80% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 422, ../SASS/index-style.scss */
+  /* line 423, ../SASS/index-style.scss */
   90% {
     -webkit-transform: translateX(1px) rotate(0);
     transform: translateX(1px) rotate(0);
   }
 
-  /* line 427, ../SASS/index-style.scss */
+  /* line 428, ../SASS/index-style.scss */
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0);
@@ -520,68 +521,68 @@
 }
 
 @keyframes buzz-out {
-  /* line 434, ../SASS/index-style.scss */
+  /* line 435, ../SASS/index-style.scss */
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 439, ../SASS/index-style.scss */
+  /* line 440, ../SASS/index-style.scss */
   20% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 444, ../SASS/index-style.scss */
+  /* line 445, ../SASS/index-style.scss */
   30% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 449, ../SASS/index-style.scss */
+  /* line 450, ../SASS/index-style.scss */
   40% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 454, ../SASS/index-style.scss */
+  /* line 455, ../SASS/index-style.scss */
   50% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 459, ../SASS/index-style.scss */
+  /* line 460, ../SASS/index-style.scss */
   60% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 464, ../SASS/index-style.scss */
+  /* line 465, ../SASS/index-style.scss */
   70% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 469, ../SASS/index-style.scss */
+  /* line 470, ../SASS/index-style.scss */
   80% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 474, ../SASS/index-style.scss */
+  /* line 475, ../SASS/index-style.scss */
   90% {
     -webkit-transform: translateX(1px) rotate(0);
     transform: translateX(1px) rotate(0);
   }
 
-  /* line 479, ../SASS/index-style.scss */
+  /* line 480, ../SASS/index-style.scss */
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0);
   }
 }
 
-/* line 485, ../SASS/index-style.scss */
+/* line 486, ../SASS/index-style.scss */
 .buzz-out {
   display: inline-block;
   -webkit-transform: translateZ(0);
@@ -589,7 +590,7 @@
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-/* line 491, ../SASS/index-style.scss */
+/* line 492, ../SASS/index-style.scss */
 .buzz-out:hover, .buzz-out:focus, .buzz-out:active {
   -webkit-animation-name: buzz-out;
   animation-name: buzz-out;
