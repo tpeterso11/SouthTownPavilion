@@ -31,7 +31,7 @@
 		</li>
 		</li>
 </ol>
-			<button class="fs-submit" type="submit">Send answers</button>
+			<button class="fs-submit" id="submit" type="submit">Send answers</button>
 </form><!-- /fs-form -->
 </div><!-- /fs-form-wrap -->
 </div><!-- /container -->

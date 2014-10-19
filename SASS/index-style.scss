@@ -66,6 +66,7 @@
 	margin-top: -30px;
 	width: 90%;
 	height: 50px;
+	z-index: 1000;
 }
 #nav-button-1{
 	height: 50px;
@@ -187,7 +188,7 @@
 }
 #x-button{
 	float: left;
-	margin-top: 160px;
+	margin-top: 150px;
 	cursor: pointer;
 
 }
@@ -204,6 +205,13 @@
 #x-button:hover > #x-left{
 	-webkit-transform: rotate(-45deg);
 	opacity: 1;
+}
+#confirm{
+	float: left;
+	width: 100%;
+	text-align: center;
+	background: #e6e6e6;
+	z-index: -1000;
 }
 
 /*About Us */
@@ -242,26 +250,41 @@
 }
 #about-top{
 	height: 100%;
-	width: 30%;
+	width: 50%;
 	border-right: medium solid #000;
 	box-shadow: 5px 0px 10px #e6e6e6;
+	transition: 1s ease-in-out;
+	-moz-transition: 1s ease-in-out;
+	-webkit-transition: 1s ease-in-out;
+	-ms-transition: 1s ease-in-out;
+	-o-transition: 1s ease-in-out;
+		:hover{
+			transform: scale(1.2,1.2);
+			-moz-transform: scale(1.2,1.2);
+			-webkit-transform: scale(1.2,1.2);
+			-ms-transform: scale(1.2,1.2);
+			-o-transform: scale(1.2,1.2);
+		}
 }
 #title{
 	margin-top: -380px;
-	margin-left: 280px;
+	margin-left: 450px;
 	margin-bottom: -20px;
 	font-family: second;
+	font-size: 36px;
+	text-align: center;
 }
 #about-p{
 	float: right;
 	-webkit-column-count: 2;
-	width: 65%;
+	width: 35%;
+	height: 200px;
 	padding: 15px;
 	position: relative;
 	color: #000;
 	background: #FF000;
 	margin-top: 55px;
-	margin-right: 5px;
+	margin-right: 50px;
 	text-align: right;
 	font-family: paragraph;
 	border-radius: 10px;
