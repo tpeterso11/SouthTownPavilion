@@ -232,7 +232,7 @@
 /* line 188, ../SASS/index-style.scss */
 #x-button {
   float: left;
-  margin-top: 160px;
+  margin-top: 150px;
   cursor: pointer;
 }
 
@@ -271,7 +271,7 @@
   border-radius: 5px;
   position: relative;
   box-shadow: inset 0 0 10px #888;
-  /*overflow: hidden; */
+  overflow: hidden;
 }
 
 /* line 223, ../SASS/index-style.scss */
@@ -299,36 +299,52 @@
 /* line 243, ../SASS/index-style.scss */
 #about-top {
   height: 100%;
-  width: 30%;
+  width: 50%;
   border-right: medium solid #000;
   box-shadow: 5px 0px 10px #e6e6e6;
+  transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+}
+/* line 253, ../SASS/index-style.scss */
+#about-top:hover {
+  transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
 }
 
-/* line 249, ../SASS/index-style.scss */
+/* line 261, ../SASS/index-style.scss */
 #title {
   margin-top: -380px;
-  margin-left: 280px;
+  margin-left: 450px;
   margin-bottom: -20px;
   font-family: second;
+  font-size: 36px;
+  text-align: center;
 }
 
-/* line 255, ../SASS/index-style.scss */
+/* line 269, ../SASS/index-style.scss */
 #about-p {
   float: right;
   -webkit-column-count: 2;
-  width: 65%;
+  width: 35%;
+  height: 200px;
   padding: 15px;
   position: relative;
   color: #000;
   background: #FF000;
   margin-top: 55px;
-  margin-right: 5px;
+  margin-right: 50px;
   text-align: right;
   font-family: paragraph;
   border-radius: 10px;
 }
 
-/* line 269, ../SASS/index-style.scss */
+/* line 284, ../SASS/index-style.scss */
 .sub {
   float: right;
   margin-right: 100px;
@@ -340,22 +356,47 @@
   -o-transition: 1s ease-in-out;
 }
 
-/* line 279, ../SASS/index-style.scss */
+/* line 294, ../SASS/index-style.scss */
 #title:hover ~ .sub {
   opacity: 1;
 }
 
 /*Calendar */
-/* line 284, ../SASS/index-style.scss */
+/* line 299, ../SASS/index-style.scss */
 #calendar {
   margin: 0 auto;
   margin-top: 100px;
   height: 500px;
+  position: relative;
   width: 50%;
   border: solid medium #000;
+  overflow-x: hidden;
+  box-shadow: inset 0 0 10px #888;
 }
 
-/* line 291, ../SASS/index-style.scss */
+/* line 309, ../SASS/index-style.scss */
+#calendar:after {
+  z-index: -100;
+  position: relative;
+  content: "";
+  bottom: 15px;
+  right: 10px;
+  left: auto;
+  width: 50%;
+  top: 80%;
+  width: 60%;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+/* line 329, ../SASS/index-style.scss */
 #calendar .month {
   background: #e6e6e6;
   height: 50px;
@@ -366,57 +407,58 @@
   border-bottom: medium double #000;
 }
 
-/* line 300, ../SASS/index-style.scss */
+/* line 338, ../SASS/index-style.scss */
 #events {
   margin-left: -20px;
   margin-top: -20px;
-  height: 400px;
+  height: 500px;
   width: 100%;
   list-style: none;
   overflow: scroll;
   z-index: -1000;
 }
-/* line 308, ../SASS/index-style.scss */
+/* line 346, ../SASS/index-style.scss */
 #events :hover ~ #clicker {
   opacity: 1;
 }
-/* line 311, ../SASS/index-style.scss */
+/* line 349, ../SASS/index-style.scss */
 #events .event {
+  background: #FFF;
   border-radius: 5px;
-  left: -20px;
+  left: 20px;
   position: relative;
   height: 100px;
-  width: 100%;
+  width: 90%;
   z-index: 1;
   border-bottom: medium solid #000;
-  -moz-transition: 1s ease-in-out;
-  -webkit-transition: 1s ease-in-out;
-  -ms-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
+  box-shadow: 0px 10px 10px #e6e6e6;
+  -moz-transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
 }
-/* line 323, ../SASS/index-style.scss */
+/* line 363, ../SASS/index-style.scss */
 #events .event :hover ~ #closer {
   opacity: 1;
 }
-/* line 326, ../SASS/index-style.scss */
+/* line 366, ../SASS/index-style.scss */
 #events .event .date {
   font-size: 16px;
   /*float:right; */
   margin-top: -10px;
   margin-right: 50px;
 }
-/* line 332, ../SASS/index-style.scss */
+/* line 372, ../SASS/index-style.scss */
 #events .event .event-name {
   float: right;
   margin: 0 auto;
-  /*margin-right: 250px;
-  margin-top: 20px; */
+  margin-right: 10px;
   font-size: 36px;
   color: #000;
   font-family: second;
   text-align: center;
 }
-/* line 342, ../SASS/index-style.scss */
+/* line 381, ../SASS/index-style.scss */
 #events .event .event-name2 {
   float: right;
   font-size: 36px;
@@ -424,7 +466,7 @@
   margin-right: 115px;
   margin-top: 20px;
 }
-/* line 349, ../SASS/index-style.scss */
+/* line 388, ../SASS/index-style.scss */
 #events .event .more {
   clear: both;
   float: right;
@@ -433,7 +475,14 @@
   font-size: 16px;
   font-family: second;
 }
-/* line 358, ../SASS/index-style.scss */
+/* line 396, ../SASS/index-style.scss */
+#events .event .event-info {
+  float: left;
+  margin-top: 50px;
+  font-family: second;
+  padding: 20px;
+}
+/* line 403, ../SASS/index-style.scss */
 #events .event-icon {
   margin-top: 10px;
   height: 80px;
@@ -441,7 +490,7 @@
   z-index: 1000;
 }
 
-/* line 365, ../SASS/index-style.scss */
+/* line 410, ../SASS/index-style.scss */
 #clicker {
   height: 100px;
   width: 200px;
@@ -459,61 +508,61 @@
 /*Animations*/
 /* Buzz Out */
 @-webkit-keyframes buzz-out {
-  /* line 383, ../SASS/index-style.scss */
+  /* line 428, ../SASS/index-style.scss */
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 388, ../SASS/index-style.scss */
+  /* line 433, ../SASS/index-style.scss */
   20% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 393, ../SASS/index-style.scss */
+  /* line 438, ../SASS/index-style.scss */
   30% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 398, ../SASS/index-style.scss */
+  /* line 443, ../SASS/index-style.scss */
   40% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 403, ../SASS/index-style.scss */
+  /* line 448, ../SASS/index-style.scss */
   50% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 408, ../SASS/index-style.scss */
+  /* line 453, ../SASS/index-style.scss */
   60% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 413, ../SASS/index-style.scss */
+  /* line 458, ../SASS/index-style.scss */
   70% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 418, ../SASS/index-style.scss */
+  /* line 463, ../SASS/index-style.scss */
   80% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 423, ../SASS/index-style.scss */
+  /* line 468, ../SASS/index-style.scss */
   90% {
     -webkit-transform: translateX(1px) rotate(0);
     transform: translateX(1px) rotate(0);
   }
 
-  /* line 428, ../SASS/index-style.scss */
+  /* line 473, ../SASS/index-style.scss */
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0);
@@ -521,68 +570,68 @@
 }
 
 @keyframes buzz-out {
-  /* line 435, ../SASS/index-style.scss */
+  /* line 480, ../SASS/index-style.scss */
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 440, ../SASS/index-style.scss */
+  /* line 485, ../SASS/index-style.scss */
   20% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 445, ../SASS/index-style.scss */
+  /* line 490, ../SASS/index-style.scss */
   30% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 450, ../SASS/index-style.scss */
+  /* line 495, ../SASS/index-style.scss */
   40% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 455, ../SASS/index-style.scss */
+  /* line 500, ../SASS/index-style.scss */
   50% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 460, ../SASS/index-style.scss */
+  /* line 505, ../SASS/index-style.scss */
   60% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 465, ../SASS/index-style.scss */
+  /* line 510, ../SASS/index-style.scss */
   70% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 470, ../SASS/index-style.scss */
+  /* line 515, ../SASS/index-style.scss */
   80% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 475, ../SASS/index-style.scss */
+  /* line 520, ../SASS/index-style.scss */
   90% {
     -webkit-transform: translateX(1px) rotate(0);
     transform: translateX(1px) rotate(0);
   }
 
-  /* line 480, ../SASS/index-style.scss */
+  /* line 525, ../SASS/index-style.scss */
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0);
   }
 }
 
-/* line 486, ../SASS/index-style.scss */
+/* line 531, ../SASS/index-style.scss */
 .buzz-out {
   display: inline-block;
   -webkit-transform: translateZ(0);
@@ -590,7 +639,7 @@
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-/* line 492, ../SASS/index-style.scss */
+/* line 537, ../SASS/index-style.scss */
 .buzz-out:hover, .buzz-out:focus, .buzz-out:active {
   -webkit-animation-name: buzz-out;
   animation-name: buzz-out;

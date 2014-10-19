@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="fs-form-wrap" id="fs-form-wrap">
         <div class="fs-title">
-            <h1>Contact SouthTown Pavilion</h1>
+            <h1>Book Your Next Outing at SouthTown Pavilion</h1>
         </div>
 <form id="myform" class="fs-form fs-form-full" autocomplete="off">
 	<ol class="fs-fields">
@@ -17,9 +17,17 @@
 			<label class="fs-field-label fs-anim-upper" for="q3" data-info="We won't send you spam, we promise...">What's your phone number?</label>
 			<input class="fs-anim-lower" id="q3" name="q3" type="text" placeholder="555-555-5555" required/>
 		</li>
+        <li>
+			<label class="fs-field-label fs-anim-upper" for="q4" data-info="The more the merrier!">How Many In Your Party?</label>
+			<input class="fs-anim-lower" id="q4" name="q4" type="number" placeholder="4" required/>
+		</li>
+        <li>
+			<label class="fs-field-label fs-anim-upper" for="q5" data-info="The more the merrier!">When Are You Wanting to Come to SouthTown?</label>
+			<input class="fs-anim-lower" id="q5" name="q5" type="date" placeholder="xx/xx/xxxx" required/>
+		</li>
 		<li>
-			<label class="fs-field-label fs-anim-upper" for="q4">What's on your mind?</label>
-			<textarea class="fs-anim-lower" id="q4" name="q4" placeholder="Describe here"></textarea>
+			<label class="fs-field-label fs-anim-upper" for="q6">Special Requests?</label>
+			<textarea class="fs-anim-lower" id="q6" name="q6" placeholder="Describe here"></textarea>
 		</li>
 		</li>
 </ol>
