@@ -6,14 +6,12 @@
 <meta charset="UTF-8">
 <title>SouthTown Pavilion: Kansas City</title>
 <link href="CSS/index-style.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="CSS/normalize.css" />
-<link rel="stylesheet" type="text/css" href="CSS/component.css" />
 <link rel="stylesheet" type="text/css" href="CSS/demo.css">
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="js/modernizr.custom.js"></script>
+<script src="JS/modernizr.custom.js"></script>
 <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-<script src="JS/jquery.easing.1.3.js"></script>
-<script src="JS/jquery.vide.min.js"></script>
+<script src="../../SouthTown Pavilion/untitled folder/CSS/JS/jquery.easing.1.3.js"></script>
+<script src="../../SouthTown Pavilion/untitled folder/CSS/JS/jquery.vide.min.js"></script>
 <script src="JS/calendar.js"></script>
 <script>
 $(document).ready(function(e) {
@@ -24,18 +22,19 @@ $(document).ready(function(e) {
 		
 		setTimeout(function(){
 		$("#navigation").slideDown(400, 'linear');
-		$("#top").slideDown(600, 'linear');
-		$("#bottom").slideDown(600, 'linear');
-		$("#overlay").fadeIn(1500, 'linear');
+		$("#top").slideDown(400, 'linear');
+		$("#bottom").slideDown(400, 'linear');
+		$("#overlay").fadeIn(600, 'linear');
 		$("#div-one").fadeIn(1800, 'linear');
 	}, 800);
+	
 	
 	};
 	var closeinit = function(){
 		$("#navigation").slideUp(400, 'linear');
 		$("#top").slideUp(400, 'linear');
 		$("#bottom").slideUp(400, 'linear');
-		$("#overlay").fadeOut(1500, 'linear');
+		$("#overlay").fadeOut(800, 'linear');
 		
 		setTimeout(function(){
 			$("#nav-button").fadeIn(400, 'linear');
@@ -56,6 +55,7 @@ $(document).ready(function(e) {
 	$("#about-page").hide();
 	$(".container").hide();
 	$("#calendar").hide();
+	$("#confirm").hide();
 	$("#nav-button").on('click', function(){
 		init();
 	});
@@ -76,12 +76,19 @@ $(document).ready(function(e) {
 			$("#calendar").fadeIn(300, 'linear');
 		}, 2000);
 	});
-	$("#contact-us").on('click', function(){
+	$("#book").on('click', function(){
 		pageinit();
 		
 		setTimeout(function(){
 			$(".container").fadeIn(300, 'linear');
 		}, 2000);
+	});
+	$("#submit").on('click', function(){
+		$("#confirm").show();
+		
+		setTimeout(function(){
+			$("#confirm").fadeOut(800, 'linear');
+		},800);
 	});
 });
 </script>
@@ -108,13 +115,16 @@ $(document).ready(function(e) {
 <body data-vide-bg="video/Record">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../libs/jquery/jquery-1.11.1.min.js"><\/script>')</script>
-<script src="../src/jquery.vide.js"></script>
+<script src="../../SouthTown Pavilion/untitled folder/src/jquery.vide.js"></script>
 <div id="top">
 </div>
 <span id="nav-button">
 <img id="nav-button-1" src="Images/single-bar.png">
 <br><img id="nav-button-2" src="Images/single-bar.png">
 <br><img id="nav-button-3" src="Images/single-bar.png">
+</span>
+<span id="confirm">
+Thank You for Booking at SouthTown! We'll Contact You Shortly!
 </span>
 <div id="navigation">
 <ul id="nav">
@@ -129,7 +139,7 @@ $(document).ready(function(e) {
 </div>
 <div id="overlay"></div>
 <div id="div-one">
-<img id="main-logo" src="Images/placeholder_2.jpg">
+<img id="main-logo" src="Images/logo.png">
 </div>
 <?php include ("about.php"); ?>
 <?php include ("calendar.php"); ?>
