@@ -8,27 +8,17 @@ $background = "Images/test-back.png";
 <?php foreach($eventPost as $event){
 	if ($event['date'] === date('F Y')){
 	echo "<li class='event'>";
-	echo "<style>";
-	echo ".event { background-image: url(";
-	echo $event['background'];
-    echo ");";
-	echo "background-size: cover;}";
-	echo "</style>";
 	echo "<span class='event-name buzz-out'>";
 	echo $event['name'];
 	echo "</span>";
-	echo "<br>";
-	echo "<span class='date'>";
-	echo $event['date'];
-	echo "</span>";
 	echo "<span class='event-info'>";
 	echo $event['event-info'];
+	echo "</span>";
 	echo "</li>";
 };
 };
 ?>
 
 </ul>
-<p id="clicker">For more information, click event.
-<br>To close, double click</p>
+<p id="clicker">For more information, hover mouse over event.
 </div>
