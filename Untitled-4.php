@@ -159,7 +159,7 @@ $(document).ready(function(e) {
     </style>
 </head>
 
-<body data-vide-bg="video/RecordPlayer">
+<body data-vide-bg="video/coke">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../libs/jquery/jquery-1.11.1.min.js"><\/script>')</script>
 <script src="JS/jquery.vide.js"></script>
