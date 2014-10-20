@@ -12,7 +12,7 @@
 <script src="JS/modernizr.custom.js"></script>
 <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 <script src="../../SouthTown Pavilion/untitled folder/CSS/JS/jquery.easing.1.3.js"></script>
-<script src="../../SouthTown Pavilion/untitled folder/CSS/JS/jquery.vide.min.js"></script>
+<script src="../../SouthTown Pavilion/untitled folder/CSS/JS/jquery.vide.js"></script>
 <script src="JS/calendar.js"></script>
 <script src="JS/flickr-index.js"></script>
 <script>
@@ -68,7 +68,10 @@ $(document).ready(function(e) {
 	});
 	$("#about").on('click', function(){
 		pageinit();
-		$("#loading").fadeIn(800, 'linear');
+		
+		setTimeout(function(){
+		$("#loading").fadeIn(2000, 'linear');
+		}, 1500);
 		
 		setTimeout(function(){
 			$("#loading").fadeOut(800, 'linear');
@@ -76,11 +79,14 @@ $(document).ready(function(e) {
 		
 		setTimeout(function(){
 			$("#about-page").fadeIn(300, 'linear');
-		}, 3000);
+		}, 5000);
 	});
 	$("#event").on('click', function(){
 		pageinit();
-		$("#loading").fadeIn(800, 'linear');
+		
+		setTimeout(function(){
+		$("#loading").fadeIn(2000, 'linear');
+		}, 1500);
 		
 		setTimeout(function(){
 			$("#loading").fadeOut(800, 'linear');
@@ -88,11 +94,14 @@ $(document).ready(function(e) {
 		
 		setTimeout(function(){
 			$("#calendar").fadeIn(300, 'linear');
-		}, 3000);
+		}, 5000);
 	});
 	$("#book").on('click', function(){
 		pageinit();
-		$("#loading").fadeIn(800, 'linear');
+		
+		setTimeout(function(){
+		$("#loading").fadeIn(2000, 'linear');
+		}, 1500);
 		
 		setTimeout(function(){
 			$("#loading").fadeOut(800, 'linear');
@@ -100,11 +109,14 @@ $(document).ready(function(e) {
 		
 		setTimeout(function(){
 			$(".container").fadeIn(300, 'linear');
-		}, 3000);
+		}, 5000);
 	});
 	$("#photos").on('click', function(){
 		pageinit();
-		$("#loading").fadeIn(800, 'linear');
+		
+		setTimeout(function(){
+		$("#loading").fadeIn(2000, 'linear');
+		}, 1500);
 		
 		setTimeout(function(){
 			$("#loading").fadeOut(800, 'linear');
@@ -112,7 +124,7 @@ $(document).ready(function(e) {
 		
 		setTimeout(function(){
 			$("#gallery").fadeIn(300, 'linear');
-		}, 3000);
+		}, 5000);
 	});
 	$("#submit").on('submit', function(){
 		$("#confirm").show();
@@ -147,10 +159,10 @@ $(document).ready(function(e) {
     </style>
 </head>
 
-<body data-vide-bg="video/Record">
+<body data-vide-bg="video/RecordPlayer">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../libs/jquery/jquery-1.11.1.min.js"><\/script>')</script>
-<script src="../../SouthTown Pavilion/untitled folder/src/jquery.vide.js"></script>
+<script src="JS/jquery.vide.js"></script>
 <div id="top">
 </div>
 <span id="nav-button">
