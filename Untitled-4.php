@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>SouthTown Pavilion: Kansas City</title>
 <link href="CSS/index-style.css" rel="stylesheet">
+<link href="CSS/component.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="CSS/demo.css">
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="JS/modernizr.custom.js"></script>
@@ -13,8 +14,10 @@
 <script src="../../SouthTown Pavilion/untitled folder/CSS/JS/jquery.easing.1.3.js"></script>
 <script src="../../SouthTown Pavilion/untitled folder/CSS/JS/jquery.vide.min.js"></script>
 <script src="JS/calendar.js"></script>
+<script src="JS/flickr-index.js"></script>
 <script>
 $(document).ready(function(e) {
+	$("#loading").hide();
 	var init = function(){
 		$("#nav-button").fadeOut(400, 'linear');
 		$(".container").fadeOut(400, 'linear');
@@ -56,6 +59,7 @@ $(document).ready(function(e) {
 	$(".container").hide();
 	$("#calendar").hide();
 	$("#confirm").hide();
+	$("#gallery").hide();
 	$("#nav-button").on('click', function(){
 		init();
 	});
@@ -64,27 +68,58 @@ $(document).ready(function(e) {
 	});
 	$("#about").on('click', function(){
 		pageinit();
+		$("#loading").fadeIn(800, 'linear');
+		
+		setTimeout(function(){
+			$("#loading").fadeOut(800, 'linear');
+		}, 2000);
 		
 		setTimeout(function(){
 			$("#about-page").fadeIn(300, 'linear');
-		}, 2000);
+		}, 3000);
 	});
 	$("#event").on('click', function(){
 		pageinit();
+		$("#loading").fadeIn(800, 'linear');
+		
+		setTimeout(function(){
+			$("#loading").fadeOut(800, 'linear');
+		}, 2000);
 		
 		setTimeout(function(){
 			$("#calendar").fadeIn(300, 'linear');
-		}, 2000);
+		}, 3000);
 	});
 	$("#book").on('click', function(){
 		pageinit();
+		$("#loading").fadeIn(800, 'linear');
+		
+		setTimeout(function(){
+			$("#loading").fadeOut(800, 'linear');
+		}, 2000);
 		
 		setTimeout(function(){
 			$(".container").fadeIn(300, 'linear');
-		}, 2000);
+		}, 3000);
 	});
-	$("#submit").on('click', function(){
+	$("#photos").on('click', function(){
+		pageinit();
+		$("#loading").fadeIn(800, 'linear');
+		
+		setTimeout(function(){
+			$("#loading").fadeOut(800, 'linear');
+		}, 2000);
+		
+		setTimeout(function(){
+			$("#gallery").fadeIn(300, 'linear');
+		}, 3000);
+	});
+	$("#submit").on('submit', function(){
 		$("#confirm").show();
+		
+		setTimeout(function(){
+			$("#loading").fadeOut(800, 'linear');
+		}, 2000);
 		
 		setTimeout(function(){
 			$("#confirm").fadeOut(800, 'linear');
@@ -130,7 +165,7 @@ Thank You for Booking at SouthTown! We'll Contact You Shortly!
 <ul id="nav">
 <li><img class="icon" id="about" src="Images/i-icon.png"></li>
 <li><img class="icon" id="event" src="Images/event-icon.png"></li>
-<li><img class="icon" id="gallery" src="Images/camera-icon.png"></li>
+<li><img class="icon" id="photos" src="Images/camera-icon.png"></li>
 <li><img class="icon" id="book" src="Images/book-icon.png"></li>
 <li><img class="icon" id="contact-us" src="Images/contact.png"></li>
 <li><span id="x-button"><img class="x" id="x-left" src="Images/single-bar-white.png">
@@ -141,9 +176,11 @@ Thank You for Booking at SouthTown! We'll Contact You Shortly!
 <div id="div-one">
 <img id="main-logo" src="Images/logo.png">
 </div>
+<?php include ("loading.php"); ?>
 <?php include ("about.php"); ?>
 <?php include ("calendar.php"); ?>
 <?php include ("contact.php"); ?>
+<?php include ("gallery.php"); ?>
 <div id="bottom">
 </div>
 <script src="JS/classie.js"></script>
