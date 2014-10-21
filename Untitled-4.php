@@ -15,6 +15,7 @@
 <script src="../../SouthTown Pavilion/untitled folder/CSS/JS/jquery.vide.js"></script>
 <script src="JS/calendar.js"></script>
 <script src="JS/flickr-index.js"></script>
+<script src="JS/gallery.js"></script>
 <script>
 $(document).ready(function(e) {
 	$("#loading").hide();
@@ -27,7 +28,6 @@ $(document).ready(function(e) {
 		$("#navigation").slideDown(400, 'linear');
 		$("#top").slideDown(400, 'linear');
 		$("#bottom").slideDown(400, 'linear');
-		$("#overlay").fadeIn(600, 'linear');
 		$("#div-one").fadeIn(1800, 'linear');
 	}, 800);
 	
@@ -37,7 +37,6 @@ $(document).ready(function(e) {
 		$("#navigation").slideUp(400, 'linear');
 		$("#top").slideUp(400, 'linear');
 		$("#bottom").slideUp(400, 'linear');
-		$("#overlay").fadeOut(800, 'linear');
 		
 		setTimeout(function(){
 			$("#nav-button").fadeIn(400, 'linear');
@@ -125,17 +124,6 @@ $(document).ready(function(e) {
 		setTimeout(function(){
 			$("#gallery").fadeIn(300, 'linear');
 		}, 5000);
-	});
-	$("#submit").on('submit', function(){
-		$("#confirm").show();
-		
-		setTimeout(function(){
-			$("#loading").fadeOut(800, 'linear');
-		}, 2000);
-		
-		setTimeout(function(){
-			$("#confirm").fadeOut(800, 'linear');
-		},800);
 	});
 });
 </script>

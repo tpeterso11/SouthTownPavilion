@@ -51,7 +51,7 @@ body {
 
 /* line 45, ../SASS/index-style.scss */
 #overlay {
-  background: #000;
+  background: #FFF;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -59,7 +59,7 @@ body {
   left: 0;
   opacity: .4;
   display: none;
-  z-index: -10;
+  z-index: 1;
 }
 
 /* line 6, ../SASS/index-style.scss */
@@ -371,7 +371,7 @@ body {
   /* IE 6-9 */
 }
 /* line 309, ../SASS/index-style.scss */
-#about-top :hover {
+#about-top:hover {
   -webkit-filter: none;
   -moz-filter: none;
   -ms-filter: none;
@@ -583,7 +583,7 @@ body {
   height: 80%;
   width: 90%;
   margin-top: 150px;
-  margin-left: 150px;
+  margin-left: 300px;
   padding: 10px;
   padding-top: 20px;
 }
@@ -604,12 +604,15 @@ body {
   border-radius: 10px;
   box-shadow: 5px 5px 10px #000;
   transition: 1s ease-in-out;
+  opacity: .5;
+  height: 150px;
+  width: 150px;
   -moz-transition: 1s ease-in-out;
   -webkit-transition: 1s ease-in-out;
   -ms-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
 }
-/* line 515, ../SASS/index-style.scss */
+/* line 518, ../SASS/index-style.scss */
 #gallery #flickr .span4 :hover {
   transform: scale(1.2, 1.2);
   -moz-transform: scale(1.2, 1.2);
@@ -617,66 +620,67 @@ body {
   -ms-transform: scale(1.2, 1.2);
   -o-transform: scale(1.2, 1.2);
   box-shadow: 5px 5px 10px #e6e6e6;
+  opacity: 1;
 }
 
 /*Animations*/
 /* Buzz Out */
 @-webkit-keyframes buzz-out {
-  /* line 531, ../SASS/index-style.scss */
+  /* line 535, ../SASS/index-style.scss */
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 536, ../SASS/index-style.scss */
+  /* line 540, ../SASS/index-style.scss */
   20% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 541, ../SASS/index-style.scss */
+  /* line 545, ../SASS/index-style.scss */
   30% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 546, ../SASS/index-style.scss */
+  /* line 550, ../SASS/index-style.scss */
   40% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 551, ../SASS/index-style.scss */
+  /* line 555, ../SASS/index-style.scss */
   50% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 556, ../SASS/index-style.scss */
+  /* line 560, ../SASS/index-style.scss */
   60% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 561, ../SASS/index-style.scss */
+  /* line 565, ../SASS/index-style.scss */
   70% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 566, ../SASS/index-style.scss */
+  /* line 570, ../SASS/index-style.scss */
   80% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 571, ../SASS/index-style.scss */
+  /* line 575, ../SASS/index-style.scss */
   90% {
     -webkit-transform: translateX(1px) rotate(0);
     transform: translateX(1px) rotate(0);
   }
 
-  /* line 576, ../SASS/index-style.scss */
+  /* line 580, ../SASS/index-style.scss */
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0);
@@ -684,68 +688,68 @@ body {
 }
 
 @keyframes buzz-out {
-  /* line 583, ../SASS/index-style.scss */
+  /* line 587, ../SASS/index-style.scss */
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 588, ../SASS/index-style.scss */
+  /* line 592, ../SASS/index-style.scss */
   20% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 593, ../SASS/index-style.scss */
+  /* line 597, ../SASS/index-style.scss */
   30% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 598, ../SASS/index-style.scss */
+  /* line 602, ../SASS/index-style.scss */
   40% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 603, ../SASS/index-style.scss */
+  /* line 607, ../SASS/index-style.scss */
   50% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 608, ../SASS/index-style.scss */
+  /* line 612, ../SASS/index-style.scss */
   60% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 613, ../SASS/index-style.scss */
+  /* line 617, ../SASS/index-style.scss */
   70% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 618, ../SASS/index-style.scss */
+  /* line 622, ../SASS/index-style.scss */
   80% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 623, ../SASS/index-style.scss */
+  /* line 627, ../SASS/index-style.scss */
   90% {
     -webkit-transform: translateX(1px) rotate(0);
     transform: translateX(1px) rotate(0);
   }
 
-  /* line 628, ../SASS/index-style.scss */
+  /* line 632, ../SASS/index-style.scss */
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0);
   }
 }
 
-/* line 634, ../SASS/index-style.scss */
+/* line 638, ../SASS/index-style.scss */
 .buzz-out {
   display: inline-block;
   -webkit-transform: translateZ(0);
@@ -753,7 +757,7 @@ body {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-/* line 640, ../SASS/index-style.scss */
+/* line 644, ../SASS/index-style.scss */
 .buzz-out:hover, .buzz-out:focus, .buzz-out:active {
   -webkit-animation-name: buzz-out;
   animation-name: buzz-out;
@@ -766,36 +770,36 @@ body {
 }
 
 @-webkit-keyframes rotateplane {
-  /* line 652, ../SASS/index-style.scss */
+  /* line 656, ../SASS/index-style.scss */
   0% {
     -webkit-transform: perspective(120px);
   }
 
-  /* line 653, ../SASS/index-style.scss */
+  /* line 657, ../SASS/index-style.scss */
   50% {
     -webkit-transform: perspective(120px) rotateY(180deg);
   }
 
-  /* line 654, ../SASS/index-style.scss */
+  /* line 658, ../SASS/index-style.scss */
   100% {
     -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
   }
 }
 
 @keyframes rotateplane {
-  /* line 658, ../SASS/index-style.scss */
+  /* line 662, ../SASS/index-style.scss */
   0% {
     transform: perspective(120px) rotateX(0deg) rotateY(0deg);
     -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
   }
 
-  /* line 661, ../SASS/index-style.scss */
+  /* line 665, ../SASS/index-style.scss */
   50% {
     transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
     -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
   }
 
-  /* line 664, ../SASS/index-style.scss */
+  /* line 668, ../SASS/index-style.scss */
   100% {
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
