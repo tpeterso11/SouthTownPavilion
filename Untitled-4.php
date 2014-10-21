@@ -187,6 +187,10 @@ Thank You for Booking at SouthTown! We'll Contact You Shortly!
 <div id="overlay"></div>
 <div id="div-one">
 <img id="main-logo" src="Images/logo.png">
+<ul id="weekly">
+<li class="week-event" id="ladies">Ladies Night</li>
+<li class="week-event" id="sunday">Sunday Funday</li>
+</ul>
 </div>
 <?php include ("loading.php"); ?>
 <?php include ("about.php"); ?>
