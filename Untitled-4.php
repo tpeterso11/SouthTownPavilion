@@ -27,6 +27,7 @@ $(document).ready(function(e) {
 		setTimeout(function(){
 		$("#navigation").slideDown(400, 'linear');
 		$("#top").slideDown(400, 'linear');
+		$("#x-button-top").hide();
 		$("#bottom").slideDown(400, 'linear');
 		$("#div-one").fadeIn(1800, 'linear');
 	}, 800);
@@ -153,9 +154,11 @@ $(document).ready(function(e) {
 		}, 500);
 	});
 	$(".booking").on('click', function(){
+		$("#top").fadeOut(400, 'linear');
 		$(".new-page").fadeOut(400, 'linear');
 		
 		setTimeout(function(){
+		$("#nav-button").fadeIn(400, 'linear');
 		$("#loading").fadeIn(2000, 'linear');
 		}, 1500);
 		
@@ -177,13 +180,16 @@ $(document).ready(function(e) {
 			position: fixed;
 		}
 		.fs-title{
-			color: #000 !important;
+			color: #FFF !important;
 		}
 		.fs-title h1{
 			text-decoration: underline;
 			font-family: second;
 		}
 		.fs-field-label{
+			color: #FFF !important;
+		}
+		.fs-form-overview .fs-field-label{
 			color: #000 !important;
 		}
     </style>
