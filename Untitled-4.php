@@ -60,7 +60,9 @@ $(document).ready(function(e) {
 	$("#calendar").hide();
 	$("#confirm").hide();
 	$("#gallery").hide();
+	$("#location").hide();
 	$("#funday").hide();
+	$(".info").not("#address").hide();
 	$("#nav-button").on('click', function(){
 		init();
 	});
@@ -127,6 +129,21 @@ $(document).ready(function(e) {
 			$("#gallery").fadeIn(300, 'linear');
 		}, 5000);
 	});
+	$("#contact-us").on('click', function(){
+		pageinit();
+		
+		setTimeout(function(){
+		$("#loading").fadeIn(2000, 'linear');
+		}, 1500);
+		
+		setTimeout(function(){
+			$("#loading").fadeOut(800, 'linear');
+		}, 2000);
+		
+		setTimeout(function(){
+			$("#location").fadeIn(300, 'linear');
+		}, 5000);
+	});
 	$("#sunday").on('click', function(){
 		$("#div-one").fadeOut(800, 'linear');
 		$("#nav-button").fadeOut(400, 'linear');
@@ -169,6 +186,17 @@ $(document).ready(function(e) {
 		setTimeout(function(){
 			$(".container").fadeIn(300, 'linear');
 		}, 5000);
+	});
+	$(".contact").on('click', function(){
+		$(".contact").not(this).css("opacity", ".4");
+		$(this).css("-webkit-transform", "scale(1.2,1.2)");
+		
+		if ($(".contact") === $("#call")){
+			$("#address").fadeOut(500, 'linear');
+			setTimeout(function(){
+			$("#phone-number").fadeIn(500, 'linear');
+		}, 1500);
+		};
 	});
 });
 </script>
@@ -236,6 +264,7 @@ Thank You for Booking at SouthTown! We'll Contact You Shortly!
 <?php include ("calendar.php"); ?>
 <?php include ("contact.php"); ?>
 <?php include ("gallery.php"); ?>
+<?php include ("location.php"); ?>
 <div id="bottom">
 </div>
 <script src="JS/classie.js"></script>
