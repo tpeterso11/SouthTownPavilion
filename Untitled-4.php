@@ -59,10 +59,11 @@ $(document).ready(function(e) {
 	$("#calendar").hide();
 	$("#confirm").hide();
 	$("#gallery").hide();
+	$("#funday").hide();
 	$("#nav-button").on('click', function(){
 		init();
 	});
-	$("#x-button").on('click', function(){
+	$(".x-button").on('click', function(){
 		closeinit();
 	});
 	$("#about").on('click', function(){
@@ -125,6 +126,47 @@ $(document).ready(function(e) {
 			$("#gallery").fadeIn(300, 'linear');
 		}, 5000);
 	});
+	$("#sunday").on('click', function(){
+		$("#div-one").fadeOut(800, 'linear');
+		$("#nav-button").fadeOut(400, 'linear');
+		
+		setTimeout(function(){
+		$("#loading").fadeIn(2000, 'linear');
+		}, 1500);
+		
+		setTimeout(function(){
+			$("#loading").fadeOut(800, 'linear');
+		}, 2000);
+		
+		setTimeout(function(){
+			$("#funday").fadeIn(300, 'linear');
+			$("#top").fadeIn(300, 'linear');
+		}, 5000);
+		
+	});
+	$("#x-button-top").on('click', function(){
+		$(".new-page").fadeOut(400, 'linear');
+		$("#nav-button").fadeIn(400, 'linear');
+		
+		setTimeout(function(){
+			$("#div-one").fadeIn(800, 'linear');
+		}, 500);
+	});
+	$(".booking").on('click', function(){
+		$(".new-page").fadeOut(400, 'linear');
+		
+		setTimeout(function(){
+		$("#loading").fadeIn(2000, 'linear');
+		}, 1500);
+		
+		setTimeout(function(){
+			$("#loading").fadeOut(800, 'linear');
+		}, 2000);
+		
+		setTimeout(function(){
+			$(".container").fadeIn(300, 'linear');
+		}, 5000);
+	});
 });
 </script>
 <style>
@@ -152,6 +194,8 @@ $(document).ready(function(e) {
 <script>window.jQuery || document.write('<script src="../libs/jquery/jquery-1.11.1.min.js"><\/script>')</script>
 <script src="JS/jquery.vide.js"></script>
 <div id="top">
+<span id="x-button-top" class="x-button"><img class="x" id="x-left" src="Images/single-bar-white.png">
+<img class="x" id="x-right" src="Images/single-bar-white.png"></span>
 </div>
 <span id="nav-button">
 <img id="nav-button-1" src="Images/single-bar.png">
@@ -168,7 +212,7 @@ Thank You for Booking at SouthTown! We'll Contact You Shortly!
 <li><img class="icon" id="photos" src="Images/camera-icon.png"></li>
 <li><img class="icon" id="book" src="Images/book-icon.png"></li>
 <li><img class="icon" id="contact-us" src="Images/contact.png"></li>
-<li><span id="x-button"><img class="x" id="x-left" src="Images/single-bar-white.png">
+<li><span class="x-button"><img class="x" id="x-left" src="Images/single-bar-white.png">
 <img class="x" id="x-right" src="Images/single-bar-white.png"></span></li>
 </ul>
 </div>
@@ -181,6 +225,7 @@ Thank You for Booking at SouthTown! We'll Contact You Shortly!
 </ul>
 </div>
 <?php include ("loading.php"); ?>
+<?php include ("funday.php"); ?>
 <?php include ("about.php"); ?>
 <?php include ("calendar.php"); ?>
 <?php include ("contact.php"); ?>
