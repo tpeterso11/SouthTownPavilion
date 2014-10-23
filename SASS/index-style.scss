@@ -533,6 +533,13 @@ body{
 		}
 }
 
+#dg-container{
+	img{
+		height: 300px;
+		width: 300px;
+	}
+}
+
 #funday{
 	height: 500px;
 	width: 60%;
@@ -616,7 +623,6 @@ body{
 			border-radius: 50%;
 			margin-left: 20px;
 			margin-top: 200px;
-			box-shadow: 2px 2px 5px #fff;
 			transition: 1s ease-in-out;
 			-moz-transition: 1s ease-in-out;
 			-webkit-transition: 1s ease-in-out;

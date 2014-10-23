@@ -1,6 +1,8 @@
 // JavaScript Document
 $(document).ready(function(){
-$(".span4").on('click', function(){
-	$("#overlay").show();
+$("img").on('click', function(){
+	$(this).css("height", "400");
+	$("img").not(this).css("height", "100");
+	$("img").not(this).css("opacity", ".4");
 });
 });

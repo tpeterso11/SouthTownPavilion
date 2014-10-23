@@ -630,7 +630,13 @@ body {
   opacity: 1;
 }
 
-/* line 536, ../SASS/index-style.scss */
+/* line 537, ../SASS/index-style.scss */
+#dg-container img {
+  height: 300px;
+  width: 300px;
+}
+
+/* line 543, ../SASS/index-style.scss */
 #funday {
   height: 500px;
   width: 60%;
@@ -646,13 +652,13 @@ body {
   box-shadow: inset 0 0 20px #888;
   overflow: hidden;
 }
-/* line 550, ../SASS/index-style.scss */
+/* line 557, ../SASS/index-style.scss */
 #funday #funday-top {
   font-family: grunge;
   font-size: 54px;
   text-align: center;
 }
-/* line 555, ../SASS/index-style.scss */
+/* line 562, ../SASS/index-style.scss */
 #funday #funday-second {
   font-family: paragraph;
   font-size: 18px;
@@ -660,7 +666,7 @@ body {
   margin-top: -30px;
   text-decoration: overline underline;
 }
-/* line 562, ../SASS/index-style.scss */
+/* line 569, ../SASS/index-style.scss */
 #funday #funday-info {
   margin-left: 30px;
   margin-top: 20px;
@@ -669,13 +675,13 @@ body {
   font-family: second;
   font-size: 18px;
 }
-/* line 569, ../SASS/index-style.scss */
+/* line 576, ../SASS/index-style.scss */
 #funday #funday-info .booking {
   text-decoration: none;
   color: #C09236 !important;
 }
 
-/* line 575, ../SASS/index-style.scss */
+/* line 582, ../SASS/index-style.scss */
 #location {
   height: 500px;
   width: 60%;
@@ -691,13 +697,13 @@ body {
   box-shadow: inset 0 0 20px #888;
   overflow: hidden;
 }
-/* line 589, ../SASS/index-style.scss */
+/* line 596, ../SASS/index-style.scss */
 #location #location-top {
   font-family: second;
   font-size: 50px;
   text-align: center;
 }
-/* line 594, ../SASS/index-style.scss */
+/* line 601, ../SASS/index-style.scss */
 #location .info {
   font-family: second;
   margin-left: 350px;
@@ -705,18 +711,18 @@ body {
   margin-bottom: -100px;
   font-size: 18px;
 }
-/* line 601, ../SASS/index-style.scss */
+/* line 608, ../SASS/index-style.scss */
 #location #call {
   margin-left: 220px;
 }
-/* line 604, ../SASS/index-style.scss */
+/* line 611, ../SASS/index-style.scss */
 #location #location-second {
   font-family: second;
   margin-left: 450px;
   margin-top: -30px;
   font-size: 18px;
 }
-/* line 610, ../SASS/index-style.scss */
+/* line 617, ../SASS/index-style.scss */
 #location .contact {
   float: left;
   border: solid medium #FFF;
@@ -726,19 +732,18 @@ body {
   border-radius: 50%;
   margin-left: 20px;
   margin-top: 200px;
-  box-shadow: 2px 2px 5px #fff;
   transition: 1s ease-in-out;
   -moz-transition: 1s ease-in-out;
   -webkit-transition: 1s ease-in-out;
   -ms-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
 }
-/* line 625, ../SASS/index-style.scss */
+/* line 631, ../SASS/index-style.scss */
 #location .contact .contact-icon {
   height: 50px;
   width: 50px;
 }
-/* line 629, ../SASS/index-style.scss */
+/* line 635, ../SASS/index-style.scss */
 #location .contact :hover {
   transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -752,61 +757,61 @@ body {
 /*Animations*/
 /* Buzz Out */
 @-webkit-keyframes buzz-out {
-  /* line 645, ../SASS/index-style.scss */
+  /* line 651, ../SASS/index-style.scss */
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 650, ../SASS/index-style.scss */
+  /* line 656, ../SASS/index-style.scss */
   20% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 655, ../SASS/index-style.scss */
+  /* line 661, ../SASS/index-style.scss */
   30% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 660, ../SASS/index-style.scss */
+  /* line 666, ../SASS/index-style.scss */
   40% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 665, ../SASS/index-style.scss */
+  /* line 671, ../SASS/index-style.scss */
   50% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 670, ../SASS/index-style.scss */
+  /* line 676, ../SASS/index-style.scss */
   60% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 675, ../SASS/index-style.scss */
+  /* line 681, ../SASS/index-style.scss */
   70% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 680, ../SASS/index-style.scss */
+  /* line 686, ../SASS/index-style.scss */
   80% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 685, ../SASS/index-style.scss */
+  /* line 691, ../SASS/index-style.scss */
   90% {
     -webkit-transform: translateX(1px) rotate(0);
     transform: translateX(1px) rotate(0);
   }
 
-  /* line 690, ../SASS/index-style.scss */
+  /* line 696, ../SASS/index-style.scss */
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0);
@@ -814,68 +819,68 @@ body {
 }
 
 @keyframes buzz-out {
-  /* line 697, ../SASS/index-style.scss */
+  /* line 703, ../SASS/index-style.scss */
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 702, ../SASS/index-style.scss */
+  /* line 708, ../SASS/index-style.scss */
   20% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 707, ../SASS/index-style.scss */
+  /* line 713, ../SASS/index-style.scss */
   30% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 712, ../SASS/index-style.scss */
+  /* line 718, ../SASS/index-style.scss */
   40% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 717, ../SASS/index-style.scss */
+  /* line 723, ../SASS/index-style.scss */
   50% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 722, ../SASS/index-style.scss */
+  /* line 728, ../SASS/index-style.scss */
   60% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 727, ../SASS/index-style.scss */
+  /* line 733, ../SASS/index-style.scss */
   70% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 732, ../SASS/index-style.scss */
+  /* line 738, ../SASS/index-style.scss */
   80% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 737, ../SASS/index-style.scss */
+  /* line 743, ../SASS/index-style.scss */
   90% {
     -webkit-transform: translateX(1px) rotate(0);
     transform: translateX(1px) rotate(0);
   }
 
-  /* line 742, ../SASS/index-style.scss */
+  /* line 748, ../SASS/index-style.scss */
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0);
   }
 }
 
-/* line 748, ../SASS/index-style.scss */
+/* line 754, ../SASS/index-style.scss */
 .buzz-out {
   display: inline-block;
   -webkit-transform: translateZ(0);
@@ -883,7 +888,7 @@ body {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-/* line 754, ../SASS/index-style.scss */
+/* line 760, ../SASS/index-style.scss */
 .buzz-out:hover, .buzz-out:focus, .buzz-out:active {
   -webkit-animation-name: buzz-out;
   animation-name: buzz-out;
@@ -896,36 +901,36 @@ body {
 }
 
 @-webkit-keyframes rotateplane {
-  /* line 766, ../SASS/index-style.scss */
+  /* line 772, ../SASS/index-style.scss */
   0% {
     -webkit-transform: perspective(120px);
   }
 
-  /* line 767, ../SASS/index-style.scss */
+  /* line 773, ../SASS/index-style.scss */
   50% {
     -webkit-transform: perspective(120px) rotateY(180deg);
   }
 
-  /* line 768, ../SASS/index-style.scss */
+  /* line 774, ../SASS/index-style.scss */
   100% {
     -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
   }
 }
 
 @keyframes rotateplane {
-  /* line 772, ../SASS/index-style.scss */
+  /* line 778, ../SASS/index-style.scss */
   0% {
     transform: perspective(120px) rotateX(0deg) rotateY(0deg);
     -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
   }
 
-  /* line 775, ../SASS/index-style.scss */
+  /* line 781, ../SASS/index-style.scss */
   50% {
     transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
     -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
   }
 
-  /* line 778, ../SASS/index-style.scss */
+  /* line 784, ../SASS/index-style.scss */
   100% {
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);

@@ -15,7 +15,7 @@
 <script src="../../SouthTown Pavilion/untitled folder/CSS/JS/jquery.vide.js"></script>
 <script src="JS/calendar.js"></script>
 <script src="JS/flickr-index.js"></script>
-<script src="JS/gallery.js"></script>
+
 <script>
 $(document).ready(function(e) {
 	$("#loading").hide();
@@ -62,6 +62,7 @@ $(document).ready(function(e) {
 	$("#gallery").hide();
 	$("#location").hide();
 	$("#funday").hide();
+	$("#dg-container").hide();
 	$(".info").not("#address").hide();
 	$("#nav-button").on('click', function(){
 		init();
@@ -141,12 +142,14 @@ $(document).ready(function(e) {
 		}, 2000);
 		
 		setTimeout(function(){
-			$("#location").fadeIn(300, 'linear');
+			$("#location").fadeIn(800, 'linear');
 		}, 5000);
 	});
 	$("#sunday").on('click', function(){
 		$("#div-one").fadeOut(800, 'linear');
 		$("#nav-button").fadeOut(400, 'linear');
+		$("#navigation").slideUp(400, 'linear');
+		$("#bottom").slideUp(400, 'linear');
 		
 		setTimeout(function(){
 		$("#loading").fadeIn(2000, 'linear');
@@ -189,14 +192,15 @@ $(document).ready(function(e) {
 	});
 	$(".contact").on('click', function(){
 		$(".contact").not(this).css("opacity", ".4");
+		$(".contact").not(this).css("-webkit-transform", "scale(1,1)");
 		$(this).css("-webkit-transform", "scale(1.2,1.2)");
+		$(this).css("opacity", "1");
+		$("#location").on('click',function(){
+			$(".contact").css("opacity", ".4");
+			$(".contact").css("-webkit-transform", "scale(1,1)");
+		});
 		
-		if ($(".contact") === $("#call")){
-			$("#address").fadeOut(500, 'linear');
-			setTimeout(function(){
-			$("#phone-number").fadeIn(500, 'linear');
-		}, 1500);
-		};
+		$(this).children("h3").fadeIn(500, 'linear');
 	});
 });
 </script>
@@ -265,6 +269,7 @@ Thank You for Booking at SouthTown! We'll Contact You Shortly!
 <?php include ("contact.php"); ?>
 <?php include ("gallery.php"); ?>
 <?php include ("location.php"); ?>
+<?php include ("gallery2.php"); ?>
 <div id="bottom">
 </div>
 <script src="JS/classie.js"></script>
