@@ -49,13 +49,13 @@
 
 .fs-form-overview {
 	padding: 2.5em 30% 6em;
-	width: 400px;
+	width: 650px;
 	height: 400px;
 	background: #FFF;
 	color: #3b3f45;
 	font-size: 1.2em;
 	overflow: scroll;
-	margin-left: 10px;
+	margin-left: -20px;
 }
 
 .fs-form-overview .fs-fields::before {

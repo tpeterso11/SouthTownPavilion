@@ -16,6 +16,10 @@
 	src: url(../Fonts/heroin07.TTF);
 	font-family: grunge;
 }
+@font-face{
+	src: url(../Fonts/CAFETA__.TTF);
+	font-family: gallery;
+}
 $color : #FF0000;
 
 body{
@@ -52,15 +56,32 @@ body{
 	bottom: 0px;
 }
 #overlay{
-	background: #FFF;
+	background: rgba(0, 0, 0, 0.8);
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	opacity: .4;
 	display: none;
 	z-index: 1;
+}
+#next{
+	height: 80px;
+	width: 80px;
+	background: #FFF;
+	border-radius: 50%;
+	z-index: 1000;
+	float: left;
+	margin-top: 430px;
+	margin-left: 450px;
+	display: none;
+	position: absolute;
+	box-shadow: 2px 2px 5px #e6e6e6;
+		#next-button{
+			margin: 0 auto;
+			height: 90px;
+			width: 90px;
+		}
 }
 /* line 6, ../SASS/index-style.scss */
 #div-one {
@@ -79,6 +100,7 @@ body{
   height: 300px;
   width: 500px;
   border-radius: 50%;
+
 }
 
 #cover{
@@ -440,7 +462,7 @@ body{
 					margin-right: 10px;
 					font-size: 36px;
 					color: #000;
-					font-family: second;
+					font-family: paragraph;
 					text-align: center;
 					-moz-transition: .5s ease-in-out;
 			-webkit-transition: .5s ease-in-out;
@@ -494,28 +516,68 @@ body{
 /*Gallery*/
 #gallery{
 	display: inline-block;
-  height: 80%;
-  width: 90%;
-  margin-top: 150px;
-  margin-left: 300px;
+  height: 30%;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 0 15px #000;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-left: 250px;
   padding: 10px;
   padding-top: 20px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  	#gallery-top{
+		color: #000;
+		font-family: second;
+	}
+  	#gallery-intro{
+		color: #000;
+		font-family: paragraph;
+		text-align: center;
+		font-size: 18px;
+		height: 100%;
+		width: 100%;
+		border-bottom: medium double #FFF;
+		font-family: gallery;
+		font-size: 18px;
+	}
+		#show{
+			margin-left: 200px;
+			margin-top: -200px;
+				.span4{
+					transition: 1s ease-in-out;
+					-moz-transition: 1s ease-in-out;
+					-webkit-transition: 1s ease-in-out;
+					-ms-transition: 1s ease-in-out;
+					-o-transition: 1s ease-in-out;
+				}
+		}
 		#flickr{
-			width: 100%;
+			float: left;
+			padding: 10px;
+			margin-bottom: -10px;
 			display: inline-block;
 			list-style: none;
+			position: fixed;
+			left:0px;
+			bottom:0px;
+			height:120px;
+			width:100%;
+			background: rgba(0, 0, 0, 0.6);
+			border-top: medium double #e6e6e6;
+			border-radius: 15px;
 				li{
 					display: inline;
 				}
 				.span4{
 					  border: solid medium #000;
 					  display: inline-block;
-					  border-radius: 10px;
-					  box-shadow: 5px 5px 10px #000;
+					  box-shadow: inset 0 0 10px #FFF;
 					  transition: 1s ease-in-out;
 					  opacity: .5;
-					  height: 150px;
-					  width: 150px;
+					  height: 100px;
+					  width: 100px;
 					  -moz-transition: 1s ease-in-out;
 					  -webkit-transition: 1s ease-in-out;
 					  -ms-transition: 1s ease-in-out;
@@ -593,6 +655,9 @@ body{
 	position: relative;
 	box-shadow: inset 0 0 20px #888;
 	overflow: hidden;
+		a{
+			color: #C09236;
+		}
 		#location-top{
 			font-family: second;
 			font-size: 50px;
@@ -600,10 +665,11 @@ body{
 		}
 		.info{
 			font-family: second;
-			margin-left: 350px;
+			margin-left: 250px;
 			margin-top: 50px;
 			margin-bottom: -100px;
 			font-size: 18px;
+			position: fixed;
 		}
 		#call{
 			margin-left: 220px;
