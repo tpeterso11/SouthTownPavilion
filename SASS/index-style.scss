@@ -86,7 +86,7 @@ body{
 /* line 6, ../SASS/index-style.scss */
 #div-one {
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 500px;
   height: 300px;
   width: 500px;
@@ -380,37 +380,19 @@ body{
 
 /*Calendar */
 #calendar{
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(255, 255, 255, 0.6);
+  	box-shadow: inset 0 0 15px #000;
 	margin: 0 auto;
-	margin-top: 100px;
-	height: 550px;
+	margin-top: 400px;
+	height: 300px;
 	position: relative;
-	width: 50%;
+	width: 80%;
 	border: solid medium #000;
 	overflow-x: hidden;
 	border-radius: 15px;
-	box-shadow: inset 0 0 20px #888;
+	box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.5);
 }
-#calendar:after{
-	z-index: -100;
-  position: relative;
-  content: "";
-  bottom: 15px;
-  right: 10px;
-  left: auto;
-  width: 50%;
-  top: 80%;
-  width: 60%;
-  background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-}
+
 #calendar .month{
 	background: rgba(255, 255, 255, 0.6);
 	height: 50px;
@@ -419,13 +401,21 @@ body{
 	text-align: center;
 	font-family: second;
 	border-bottom: medium double #000;
+		.close{
+			height: 40px;
+			width: 40px;
+			float: right;
+			margin-right: 20px;
+			margin-top: -10px;
+			cursor: pointer;
+		}
 }
 #events{
 	color: #FFF;
 	margin-left: -20px;
-	margin-top: -20px;
-	height: 500px;
-	width: 100%;
+	margin-top: 20px;
+	height: 200px;
+	width: 90%;
 	list-style: none;
 	overflow: scroll;
 	z-index: -1000;
@@ -433,16 +423,14 @@ body{
 			opacity: 1;
 		}
 		.event{
-			background: #FFF;
 			border-radius: 5px;
+			display: inline;
 			left: 20px;
-			position: relative;
-			height: 200px;
-			width: 90%;
-			z-index: 1;
+			height: 500px;
+			width: 10%;
+			z-index: 100;
 			margin-top: 20px;
-			border-bottom: medium solid #000;
-			box-shadow: 0px 10px 10px #e6e6e6;
+			margin-left: 50px;
 			-moz-transition: .5s ease-in-out;
 			-webkit-transition: 1s ease-in-out;
 			-ms-transition: .5s ease-in-out;
@@ -459,10 +447,10 @@ body{
 				.event-name{
 					float: left;
 					margin: 0 auto;
-					margin-right: 10px;
+					margin-right: 50px;
 					font-size: 36px;
 					color: #000;
-					font-family: paragraph;
+					font-family: gallery;
 					text-align: center;
 					-moz-transition: .5s ease-in-out;
 			-webkit-transition: .5s ease-in-out;
@@ -485,10 +473,11 @@ body{
 					font-family: second;
 				}
 				.event-info{
-					float: left;
-					margin-top: 50px;
+					z-index: 100;
+					position: relative;
+					margin-top: 100px;
 					font-family: second;
-					padding: 20px;
+					padding-right: 50px;
 					color: #000;
 				}
 		}
@@ -526,7 +515,7 @@ body{
   padding: 10px;
   padding-top: 20px;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
   	#gallery-top{
 		color: #000;
 		font-family: second;

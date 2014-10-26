@@ -22,6 +22,7 @@ $(document).ready(function(e) {
 	var init = function(){
 		$("#nav-button").fadeOut(400, 'linear');
 		$(".container").fadeOut(400, 'linear');
+		$("#flickr").fadeOut(900, 'linear');
 		$(".new-page").fadeOut(400, 'linear');
 		
 		setTimeout(function(){
@@ -190,17 +191,26 @@ $(document).ready(function(e) {
 			$(".container").fadeIn(300, 'linear');
 		}, 5000);
 	});
-	$(".contact").on('click', function(){
-		$(".contact").not(this).css("opacity", ".4");
-		$(".contact").not(this).css("-webkit-transform", "scale(1,1)");
-		$(this).css("-webkit-transform", "scale(1.2,1.2)");
-		$(this).css("opacity", "1");
-		$("#location").on('click',function(){
-			$(".contact").css("opacity", ".4");
-			$(".contact").css("-webkit-transform", "scale(1,1)");
-		});
+	$("#call").on('click', function(){
+		$(".info").fadeOut(800, 'linear');
 		
-		$(this).children("h3").fadeIn(500, 'linear');
+		setTimeout(function(){
+			$("#phone-number").fadeIn(800, 'linear');
+		}, 1500);
+	});
+	$("#email").on('click', function(){
+		$(".info").fadeOut(800, 'linear');
+		
+		setTimeout(function(){
+			$("#email-address").fadeIn(800, 'linear');
+		}, 1500);
+	});
+	$("#drive").on('click', function(){
+		$(".info").fadeOut(800, 'linear');
+		
+		setTimeout(function(){
+			$("#address").fadeIn(800, 'linear');
+		}, 1500);
 	});
 });
 </script>

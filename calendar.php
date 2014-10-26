@@ -1,9 +1,5 @@
-<?php
-$background = "Images/test-back.png";
-
-?>
 <div id="calendar" class="new-page">
-<h1 class="month"><?php echo date('F Y'); ?></h1>
+<h1 class="month">Upcoming Events at SouthTown <img class="close" src="Images/close-icon.png"></h1>
 <ul id="events">
 <?php foreach($eventPost as $event){
 	if ($event['date'] === date('F Y')){
@@ -20,5 +16,6 @@ $background = "Images/test-back.png";
 ?>
 
 </ul>
+
 <p id="clicker">For more information, hover mouse over event.
 </div>

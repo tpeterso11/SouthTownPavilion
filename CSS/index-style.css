@@ -102,7 +102,7 @@ body {
 /* line 87, ../SASS/index-style.scss */
 #div-one {
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 500px;
   height: 300px;
   width: 500px;
@@ -458,41 +458,20 @@ body {
 /*Calendar */
 /* line 382, ../SASS/index-style.scss */
 #calendar {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 0 15px #000;
   margin: 0 auto;
-  margin-top: 100px;
-  height: 550px;
+  margin-top: 400px;
+  height: 300px;
   position: relative;
-  width: 50%;
+  width: 80%;
   border: solid medium #000;
   overflow-x: hidden;
   border-radius: 15px;
-  box-shadow: inset 0 0 20px #888;
+  box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* line 394, ../SASS/index-style.scss */
-#calendar:after {
-  z-index: -100;
-  position: relative;
-  content: "";
-  bottom: 15px;
-  right: 10px;
-  left: auto;
-  width: 50%;
-  top: 80%;
-  width: 60%;
-  background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-}
-
-/* line 414, ../SASS/index-style.scss */
+/* line 396, ../SASS/index-style.scss */
 #calendar .month {
   background: rgba(255, 255, 255, 0.6);
   height: 50px;
@@ -502,65 +481,72 @@ body {
   font-family: second;
   border-bottom: medium double #000;
 }
+/* line 404, ../SASS/index-style.scss */
+#calendar .month .close {
+  height: 40px;
+  width: 40px;
+  float: right;
+  margin-right: 20px;
+  margin-top: -10px;
+  cursor: pointer;
+}
 
-/* line 423, ../SASS/index-style.scss */
+/* line 413, ../SASS/index-style.scss */
 #events {
   color: #FFF;
   margin-left: -20px;
-  margin-top: -20px;
-  height: 500px;
-  width: 100%;
+  margin-top: 20px;
+  height: 200px;
+  width: 90%;
   list-style: none;
   overflow: scroll;
   z-index: -1000;
 }
-/* line 432, ../SASS/index-style.scss */
+/* line 422, ../SASS/index-style.scss */
 #events :hover ~ #clicker {
   opacity: 1;
 }
-/* line 435, ../SASS/index-style.scss */
+/* line 425, ../SASS/index-style.scss */
 #events .event {
-  background: #FFF;
   border-radius: 5px;
+  display: inline;
   left: 20px;
-  position: relative;
-  height: 200px;
-  width: 90%;
-  z-index: 1;
+  height: 500px;
+  width: 10%;
+  z-index: 100;
   margin-top: 20px;
-  border-bottom: medium solid #000;
-  box-shadow: 0px 10px 10px #e6e6e6;
+  margin-left: 50px;
   -moz-transition: .5s ease-in-out;
   -webkit-transition: 1s ease-in-out;
   -ms-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
 }
-/* line 450, ../SASS/index-style.scss */
+/* line 438, ../SASS/index-style.scss */
 #events .event :hover ~ #closer {
   opacity: 1;
 }
-/* line 453, ../SASS/index-style.scss */
+/* line 441, ../SASS/index-style.scss */
 #events .event .date {
   font-size: 16px;
   /*float:right; */
   margin-top: -10px;
   margin-right: 50px;
 }
-/* line 459, ../SASS/index-style.scss */
+/* line 447, ../SASS/index-style.scss */
 #events .event .event-name {
   float: left;
   margin: 0 auto;
-  margin-right: 10px;
+  margin-right: 50px;
   font-size: 36px;
   color: #000;
-  font-family: paragraph;
+  font-family: gallery;
   text-align: center;
   -moz-transition: .5s ease-in-out;
   -webkit-transition: .5s ease-in-out;
   -ms-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
 }
-/* line 472, ../SASS/index-style.scss */
+/* line 460, ../SASS/index-style.scss */
 #events .event .event-name2 {
   float: right;
   font-size: 36px;
@@ -568,7 +554,7 @@ body {
   margin-right: 115px;
   margin-top: 20px;
 }
-/* line 479, ../SASS/index-style.scss */
+/* line 467, ../SASS/index-style.scss */
 #events .event .more {
   clear: both;
   float: right;
@@ -577,15 +563,16 @@ body {
   font-size: 16px;
   font-family: second;
 }
-/* line 487, ../SASS/index-style.scss */
+/* line 475, ../SASS/index-style.scss */
 #events .event .event-info {
-  float: left;
-  margin-top: 50px;
+  z-index: 100;
+  position: relative;
+  margin-top: 100px;
   font-family: second;
-  padding: 20px;
+  padding-right: 50px;
   color: #000;
 }
-/* line 495, ../SASS/index-style.scss */
+/* line 484, ../SASS/index-style.scss */
 #events .event-icon {
   margin-top: 10px;
   height: 80px;
@@ -593,7 +580,7 @@ body {
   z-index: 1000;
 }
 
-/* line 502, ../SASS/index-style.scss */
+/* line 491, ../SASS/index-style.scss */
 #clicker {
   height: 100px;
   width: 200px;
@@ -609,7 +596,7 @@ body {
 }
 
 /*Gallery*/
-/* line 517, ../SASS/index-style.scss */
+/* line 506, ../SASS/index-style.scss */
 #gallery {
   display: inline-block;
   height: 30%;
@@ -622,14 +609,14 @@ body {
   padding: 10px;
   padding-top: 20px;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
-/* line 530, ../SASS/index-style.scss */
+/* line 519, ../SASS/index-style.scss */
 #gallery #gallery-top {
   color: #000;
   font-family: second;
 }
-/* line 534, ../SASS/index-style.scss */
+/* line 523, ../SASS/index-style.scss */
 #gallery #gallery-intro {
   color: #000;
   font-family: paragraph;
@@ -641,12 +628,12 @@ body {
   font-family: gallery;
   font-size: 18px;
 }
-/* line 545, ../SASS/index-style.scss */
+/* line 534, ../SASS/index-style.scss */
 #gallery #show {
   margin-left: 200px;
   margin-top: -200px;
 }
-/* line 548, ../SASS/index-style.scss */
+/* line 537, ../SASS/index-style.scss */
 #gallery #show .span4 {
   transition: 1s ease-in-out;
   -moz-transition: 1s ease-in-out;
@@ -654,7 +641,7 @@ body {
   -ms-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
 }
-/* line 556, ../SASS/index-style.scss */
+/* line 545, ../SASS/index-style.scss */
 #gallery #flickr {
   float: left;
   padding: 10px;
@@ -670,11 +657,11 @@ body {
   border-top: medium double #e6e6e6;
   border-radius: 15px;
 }
-/* line 570, ../SASS/index-style.scss */
+/* line 559, ../SASS/index-style.scss */
 #gallery #flickr li {
   display: inline;
 }
-/* line 573, ../SASS/index-style.scss */
+/* line 562, ../SASS/index-style.scss */
 #gallery #flickr .span4 {
   border: solid medium #000;
   display: inline-block;
@@ -688,7 +675,7 @@ body {
   -ms-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
 }
-/* line 585, ../SASS/index-style.scss */
+/* line 574, ../SASS/index-style.scss */
 #gallery #flickr .span4 :hover {
   transform: scale(1.2, 1.2);
   -moz-transform: scale(1.2, 1.2);
@@ -699,13 +686,13 @@ body {
   opacity: 1;
 }
 
-/* line 599, ../SASS/index-style.scss */
+/* line 588, ../SASS/index-style.scss */
 #dg-container img {
   height: 300px;
   width: 300px;
 }
 
-/* line 605, ../SASS/index-style.scss */
+/* line 594, ../SASS/index-style.scss */
 #funday {
   height: 500px;
   width: 60%;
@@ -721,13 +708,13 @@ body {
   box-shadow: inset 0 0 20px #888;
   overflow: hidden;
 }
-/* line 619, ../SASS/index-style.scss */
+/* line 608, ../SASS/index-style.scss */
 #funday #funday-top {
   font-family: grunge;
   font-size: 54px;
   text-align: center;
 }
-/* line 624, ../SASS/index-style.scss */
+/* line 613, ../SASS/index-style.scss */
 #funday #funday-second {
   font-family: paragraph;
   font-size: 18px;
@@ -735,7 +722,7 @@ body {
   margin-top: -30px;
   text-decoration: overline underline;
 }
-/* line 631, ../SASS/index-style.scss */
+/* line 620, ../SASS/index-style.scss */
 #funday #funday-info {
   margin-left: 30px;
   margin-top: 20px;
@@ -744,13 +731,13 @@ body {
   font-family: second;
   font-size: 18px;
 }
-/* line 638, ../SASS/index-style.scss */
+/* line 627, ../SASS/index-style.scss */
 #funday #funday-info .booking {
   text-decoration: none;
   color: #C09236 !important;
 }
 
-/* line 644, ../SASS/index-style.scss */
+/* line 633, ../SASS/index-style.scss */
 #location {
   height: 500px;
   width: 60%;
@@ -766,17 +753,17 @@ body {
   box-shadow: inset 0 0 20px #888;
   overflow: hidden;
 }
-/* line 658, ../SASS/index-style.scss */
+/* line 647, ../SASS/index-style.scss */
 #location a {
   color: #C09236;
 }
-/* line 661, ../SASS/index-style.scss */
+/* line 650, ../SASS/index-style.scss */
 #location #location-top {
   font-family: second;
   font-size: 50px;
   text-align: center;
 }
-/* line 666, ../SASS/index-style.scss */
+/* line 655, ../SASS/index-style.scss */
 #location .info {
   font-family: second;
   margin-left: 250px;
@@ -785,18 +772,18 @@ body {
   font-size: 18px;
   position: fixed;
 }
-/* line 674, ../SASS/index-style.scss */
+/* line 663, ../SASS/index-style.scss */
 #location #call {
   margin-left: 220px;
 }
-/* line 677, ../SASS/index-style.scss */
+/* line 666, ../SASS/index-style.scss */
 #location #location-second {
   font-family: second;
   margin-left: 450px;
   margin-top: -30px;
   font-size: 18px;
 }
-/* line 683, ../SASS/index-style.scss */
+/* line 672, ../SASS/index-style.scss */
 #location .contact {
   float: left;
   border: solid medium #FFF;
@@ -812,12 +799,12 @@ body {
   -ms-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
 }
-/* line 697, ../SASS/index-style.scss */
+/* line 686, ../SASS/index-style.scss */
 #location .contact .contact-icon {
   height: 50px;
   width: 50px;
 }
-/* line 701, ../SASS/index-style.scss */
+/* line 690, ../SASS/index-style.scss */
 #location .contact :hover {
   transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -831,61 +818,61 @@ body {
 /*Animations*/
 /* Buzz Out */
 @-webkit-keyframes buzz-out {
-  /* line 717, ../SASS/index-style.scss */
+  /* line 706, ../SASS/index-style.scss */
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 722, ../SASS/index-style.scss */
+  /* line 711, ../SASS/index-style.scss */
   20% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 727, ../SASS/index-style.scss */
+  /* line 716, ../SASS/index-style.scss */
   30% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 732, ../SASS/index-style.scss */
+  /* line 721, ../SASS/index-style.scss */
   40% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 737, ../SASS/index-style.scss */
+  /* line 726, ../SASS/index-style.scss */
   50% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 742, ../SASS/index-style.scss */
+  /* line 731, ../SASS/index-style.scss */
   60% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 747, ../SASS/index-style.scss */
+  /* line 736, ../SASS/index-style.scss */
   70% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 752, ../SASS/index-style.scss */
+  /* line 741, ../SASS/index-style.scss */
   80% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 757, ../SASS/index-style.scss */
+  /* line 746, ../SASS/index-style.scss */
   90% {
     -webkit-transform: translateX(1px) rotate(0);
     transform: translateX(1px) rotate(0);
   }
 
-  /* line 762, ../SASS/index-style.scss */
+  /* line 751, ../SASS/index-style.scss */
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0);
@@ -893,68 +880,68 @@ body {
 }
 
 @keyframes buzz-out {
-  /* line 769, ../SASS/index-style.scss */
+  /* line 758, ../SASS/index-style.scss */
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 774, ../SASS/index-style.scss */
+  /* line 763, ../SASS/index-style.scss */
   20% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 779, ../SASS/index-style.scss */
+  /* line 768, ../SASS/index-style.scss */
   30% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
 
-  /* line 784, ../SASS/index-style.scss */
+  /* line 773, ../SASS/index-style.scss */
   40% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
 
-  /* line 789, ../SASS/index-style.scss */
+  /* line 778, ../SASS/index-style.scss */
   50% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 794, ../SASS/index-style.scss */
+  /* line 783, ../SASS/index-style.scss */
   60% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 799, ../SASS/index-style.scss */
+  /* line 788, ../SASS/index-style.scss */
   70% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
 
-  /* line 804, ../SASS/index-style.scss */
+  /* line 793, ../SASS/index-style.scss */
   80% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
 
-  /* line 809, ../SASS/index-style.scss */
+  /* line 798, ../SASS/index-style.scss */
   90% {
     -webkit-transform: translateX(1px) rotate(0);
     transform: translateX(1px) rotate(0);
   }
 
-  /* line 814, ../SASS/index-style.scss */
+  /* line 803, ../SASS/index-style.scss */
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0);
   }
 }
 
-/* line 820, ../SASS/index-style.scss */
+/* line 809, ../SASS/index-style.scss */
 .buzz-out {
   display: inline-block;
   -webkit-transform: translateZ(0);
@@ -962,7 +949,7 @@ body {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-/* line 826, ../SASS/index-style.scss */
+/* line 815, ../SASS/index-style.scss */
 .buzz-out:hover, .buzz-out:focus, .buzz-out:active {
   -webkit-animation-name: buzz-out;
   animation-name: buzz-out;
@@ -975,36 +962,36 @@ body {
 }
 
 @-webkit-keyframes rotateplane {
-  /* line 838, ../SASS/index-style.scss */
+  /* line 827, ../SASS/index-style.scss */
   0% {
     -webkit-transform: perspective(120px);
   }
 
-  /* line 839, ../SASS/index-style.scss */
+  /* line 828, ../SASS/index-style.scss */
   50% {
     -webkit-transform: perspective(120px) rotateY(180deg);
   }
 
-  /* line 840, ../SASS/index-style.scss */
+  /* line 829, ../SASS/index-style.scss */
   100% {
     -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
   }
 }
 
 @keyframes rotateplane {
-  /* line 844, ../SASS/index-style.scss */
+  /* line 833, ../SASS/index-style.scss */
   0% {
     transform: perspective(120px) rotateX(0deg) rotateY(0deg);
     -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
   }
 
-  /* line 847, ../SASS/index-style.scss */
+  /* line 836, ../SASS/index-style.scss */
   50% {
     transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
     -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
   }
 
-  /* line 850, ../SASS/index-style.scss */
+  /* line 839, ../SASS/index-style.scss */
   100% {
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
