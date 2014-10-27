@@ -14,7 +14,7 @@
 			<input class="fs-anim-lower" id="q2" name="q2" type="email" placeholder="dean@road.us" required/>
 		</li>
         <li>
-			<label class="fs-field-label fs-anim-upper" for="q3" data-info="We won't send you spam, we promise...">What's your phone number?</label>
+			<label class="fs-field-label fs-anim-upper" for="q3" data-info="Only if we need to contact you about your reservation!">What's your phone number?</label>
 			<input class="fs-anim-lower" id="q3" name="q3" type="text" placeholder="555-555-5555" required/>
 		</li>
         <li>
@@ -22,7 +22,7 @@
 			<input class="fs-anim-lower" id="q4" name="q4" type="number" placeholder="4" required/>
 		</li>
         <li>
-			<label class="fs-field-label fs-anim-upper" for="q5" data-info="The more the merrier!">When Are You Wanting to Come to SouthTown?</label>
+			<label class="fs-field-label fs-anim-upper" for="q5" data-info="The sooner the better...">When Are You Wanting to Come to SouthTown?</label>
 			<input class="fs-anim-lower" id="q5" name="q5" type="date" placeholder="xx/xx/xxxx" required/>
 		</li>
 		<li>

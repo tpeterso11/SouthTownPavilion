@@ -162,7 +162,7 @@ $(document).ready(function(e) {
 		
 		setTimeout(function(){
 			$("#funday").fadeIn(300, 'linear');
-			$("#top").fadeIn(300, 'linear');
+			$("#top").show();
 		}, 5000);
 		
 	});
